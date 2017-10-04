@@ -1,0 +1,19 @@
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<typeAliases>
+		<package name="po" />
+	</typeAliases>
+
+	<plugins>
+		<plugin interceptor="com.github.pagehelper.PageInterceptor">
+			<property name="helperDialect" value="mysql"/>
+			<property name="reasonable" value="true"/>
+			<property name="supportMethodsArguments" value="true"/>
+			<property name="autoRuntimeDialect" value="true"/>
+		</plugin>
+	</plugins>
+
+</configuration>
